@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+	<title>Drag and Drop Monster Music</title>
+	<link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div id="container">
+        <header id="speaker" class="grid">
+            <img id="speaker-01" src="images/speaker.svg" alt="speaker">
+            <h1><span>MONSTER</span> Funky Music</h1>
+            <p>Click monsters and Change images<br>
+            Drag instruments and Drop on monsters, you can listen to funky musics</p>
+            <img id="speaker-02" src="images/speaker.svg" alt="speaker">
+        </header>
+
+        <section class="monsters" id="draggedPiece">
+            <img id="0" src="images/monster0.png" alt="monster_Do">
+            <img id="1" src="images/monster1.png" alt="monster_Re">
+            <img id="2" src="images/monster2.png" alt="monster_mi">
+            <img id="3" src="images/monster3.png" alt="monster-fa">
+            <img id="4" src="images/monster4.png" alt="monster-sol">
+            <img id="5" src="images/monster5.png" alt="monster-la">
+        </section>
+    
+        <section>
+            <div id="instruments" class="inst-con">
+             <div class="item">
+                <img data-key="piano" data-trackref="Piano" src="images/piano.png" alt="piano" id="piano">
+            </div>
+             <div class="item">
+                <img data-key="mic" data-trackref="Mic" src="images/mic.png" alt="mic" id="mic">
+            </div>
+             <div class="item">
+                <img data-key="guitar" data-trackref="Guitar" src="images/guitar.png" alt="guitar" id="guitar">
+            </div>
+             <div class="item2">
+                <img data-key="shaker" data-trackref="Shaker" src="images/shaker.png" alt="shaker" id="shaker" >
+            </div>
+             <div class="item2">
+                <img data-key="drum" data-trackref="Drum" src="images/drum.png" alt="drum" id="drum">
+            </div>
+             <div class="item2">
+                <img data-key="xylophone" data-trackref="Xylophone" src="images/xylophone.png" alt="xylophone" id="xylophone">
+            </div>
+            </div>
+        </section>
+
+        <section class="hidden">
+            <audio data-key="piano" id="piano-audio" src="music/I Feel It All So Deeply - Bail Bonds.mp3" loop></audio>
+            <audio data-key="mic" id="mic-audio" src="music/Insta Beat Vixens - half.cool.mp3" loop></audio>
+            <audio data-key="guitar" id="guitar-audio" src="music/Next Steps - half.cool.mp3" loop></audio>
+            <audio data-key="shaker" id="shaker-audio" src="music/Sharp Edges - half.cool.mp3" loop></audio>
+            <audio data-key="drum" id="drum-audio" src="music/This Close - half.cool.mp3"></audio loop>
+            <audio data-key="xylophone" id="xylophone" src="music/Will 2 Pwr - half.cool.mp3" loop></audio>
+        </section>
+
+        <section class="audio-controls">
+            <button id="pauseButton">STOP</button>
+            <button id="rewindButton" type="reset">RESET</button>
+      
+            <input id="volumeControl" type="range" min="0" max="100" step="1">
+        </section>
+    </div>
+
+     <script src="js/main.js"></script>
+</body>
+</html>
