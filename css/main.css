@@ -1,0 +1,248 @@
+@charset "utf-8";
+/* CSS Document 
+1. common */
+
+body {
+	margin: auto 0;
+	border: 0px;
+	color:#FFF;
+	font-family: 'Luckiest Guy', sans-serif;
+}
+
+#container {
+	margin: auto 0;
+	width: 1920px;
+	height: 1080px;
+	background-image:url(../images/backGround0.jpg);
+	background-repeat:no-repeat;
+	background-size: 1920px 1080px;
+}
+
+.grid {
+    display: grid;
+    padding-right: 4px; 
+    grid-template-columns: repeat(12, 137px);
+    grid-column-gap: 16px;
+}
+
+/* 2. header */
+
+header {
+    width: 1920px;
+    height: 240px;
+    display: inline-block;
+    text-align: center;
+}
+
+#speaker-01 {
+	width: 143px;
+    height: 216px;
+	grid-column: 3/4;
+	grid-row: 1/3;
+	margin-top: 30px;
+}
+
+#speaker-02 {
+	width: 143px;
+    height: 216px;
+	grid-column: 10/11;
+	grid-row: 1/3;
+	margin-top: 30px;
+}
+
+#speaker h1{
+	grid-column: 4/10;
+	grid-row: 1/3;
+	font-size: 80px;
+	color: orange;
+	margin-top: 10px;
+	margin-bottom: 0;
+	margin-top: 50px;
+}
+
+#speaker h1 span {
+	color: red;
+}
+#speaker p{
+	font-family: sans-serif;
+	grid-column: 4/10;
+	grid-row: 2/3;
+	font-size: 30px;
+	color: white;
+	margin-top: 90px;
+	padding-top: 50px;
+}
+
+/* 3. monsters */
+
+#music-mixer {
+    width: 100%;
+	text-align: center;
+	margin-top: 150px;
+}
+
+.monsters {
+    width: 1920px;
+	height: 300px;
+	display: inline-block;
+	margin-top: 70px;
+	margin-bottom: 50px;
+	margin-left: 170px;
+	overflow: hidden;
+}
+
+.monsters img {
+	width: 245px;
+	height: 237px; 
+	padding-top: 50px;
+} 
+
+.monsters img:hover {
+	scale: 1.2;
+}
+
+#monster-Do, #monster-Re, #monster-Mi, #monster-Fa, #monster-Sol, #monster-La:hover{
+	cursor: pointer;
+}
+
+/* monster-1
+#monster1 {cursor: pointer;}
+#monster1:hover .do4 {fill: orange}
+#monster1:hover .do3 {fill: green}
+#monster1:hover .do6 {fill: pink}
+
+
+monster-2
+#monster2 {cursor: pointer;}
+#monster2:hover .re10 {fill: lightgreen}
+#monster2:hover .re7 {fill: green}
+#monster2:hover .re6 {fill: pink}
+
+monster-3
+#monster3 {cursor: pointer;}
+#monster3:hover .st19 {fill: palevioletred}
+#monster3:hover .st21 {fill: palevioletred}
+#monster3:hover .st23 {fill: palevioletred}
+#monster3:hover .st25 {fill: rgb(189, 233, 44)}
+
+monster-
+#monster4 {cursor: pointer;}
+#monster4:hover .fa8 {fill: red}
+#monster4:hover .fa37 {fill: rgb(237, 151, 14)}
+#monster4:hover .fa38 {fill: rgb(16, 231, 99)}
+#monster4:hover .fa39 {fill: rgb(82, 28, 208)}
+
+monster-5
+#monster5 {cursor: pointer;}
+#monster5:hover .sol41 {fill: red}
+#monster5:hover .sol42 {fill: rgb(237, 151, 14)}
+#monster5:hover .sol4 {fill: rgb(16, 231, 99)}
+#monster5:hover .sol34 {fill: rgb(82, 28, 208)}
+
+monster-6
+#monster6 {cursor: pointer;}
+#monster6:hover .la8 {fill: red}
+#monster6:hover .la9 {fill: rgb(237, 151, 14)}
+#monster6:hover .la52 {fill: rgb(16, 231, 99)}
+#monster6:hover .la6 {fill: rgb(82, 28, 208)}
+
+
+/* 4. instrument */
+
+.inst-con{
+	width: 1300px;
+	height: 173px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-left: 300px;
+}
+
+.item {
+	width: 178px;
+	height: 165px;
+	border: 8px solid #FC8BD0;
+	border-radius: 35px;
+	background-color: #727171;
+	align-self: center;
+}
+
+.item2 {
+	width: 178px;
+	height: 165px;
+	border: 8px solid #4debe1;
+	border-radius: 35px;
+	background-color: #727171;
+}
+
+ #piano {
+	width: 120px;
+	height: 52px;
+	margin-top: 57px;
+	margin-left: 25px;
+}
+
+#mic {
+	width: 50px;
+	height: 100px;
+	margin-top: 35px;
+	margin-left: 60px;
+}
+
+#guitar {
+	width: 60px;
+	height: 120px;
+	margin-top: 22px;
+	margin-left: 50px;
+}
+
+#shaker {
+	width: 70px;
+	height: 100px;
+	margin-top: 35px;
+	margin-left: 50px;
+}
+
+#drum {
+	width: 100px;
+	height: 100px;
+	margin-top: 27px;
+	margin-left: 40px;
+}
+
+#xylophone {
+	width: 100px;
+	height: 140px;
+	margin-top: 15px;
+	margin-left: 40px;
+}
+
+/* 5. Audio Controls */
+.audio-controls { 
+	margin-top: 1.5em; 
+	margin-left: 700px;
+}
+
+.audio-controls button {
+	padding: 0.5em 1em;
+	margin-top: 0.5em;
+	background-color: #727171;
+	border: 5px solid #4debe1;
+	border-radius: 15px;
+	color: white;
+	font-size: 1.25em;
+	cursor: pointer;
+  }
+
+  #volumeControl {
+	width: 300px;
+  }
+
+  /* button[type="reset"] {
+	background-color: red;
+	color: white;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+  } */
